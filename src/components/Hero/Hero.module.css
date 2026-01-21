@@ -1,0 +1,89 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden; 
+  background-color: var(--bg-dark);
+}
+
+.contenu {
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.titre {
+  font-size: clamp(3rem, 8vw, 5rem); /* Taille adaptative */
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.Btn {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* --- Éléments de Décoration (Formes) --- */
+
+.shape {
+  position: absolute;
+  filter: blur(40px);
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.circle1 {
+  width: 300px;
+  height: 300px;
+  background: var(--text-secondary);
+  border-radius: 50%;
+  top: 10%;
+  left: -50px;
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  bottom: 10%;
+  right: -20px;
+  filter: blur(60px);
+}
+
+.dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-primary);
+  opacity: 0.6;
+  border-radius: 2px;
+}

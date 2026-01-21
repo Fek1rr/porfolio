@@ -1,0 +1,55 @@
+
+
+:root {
+  /* Colors - Backgrounds */
+  --bg-dark: #090e16;          /* Fond principal très sombre */
+  --bg-card: #0d1520;          /* Fond des cartes de projet */
+  --bg-card-alt: #111b27;      /* Fond secondaire pour les sections */
+  
+  /* Colors - Accents */
+  --accent-primary: #ff8c32;   /* Orange principal (boutons, bordures) */
+  --accent-hover: #e67e22;     /* Orange plus sombre pour le hover */
+  
+  /* Colors - Typography */
+  --text-main: #ffffff;        /* Titres et textes importants */
+  --text-secondary: #94a3b8;   /* Paragraphes et labels */
+  --text-muted: #64748b;       /* Textes moins importants */
+
+  /* Borders & Glassmorphism */
+  --border-color: #1e293b;     /* Bordures des cartes */
+  --border-glow: rgba(255, 140, 50, 0.2); /* Halo orange discret */
+  
+  /* Gradients */
+  --gradient-card: linear-gradient(145deg, #0d1520, #111b27);
+
+  /* Spacing & Radius */
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --container-width: 1100px;
+  --section-padding: 80px 20px;
+}
+
+/* Reset de base pour correspondre au design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+button, a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}

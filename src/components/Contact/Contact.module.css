@@ -1,0 +1,125 @@
+.footerSection {
+  padding: 80px 20px 40px;
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-color);
+}
+
+.cadre {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.contactGrille {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+/* --- Gauche --- */
+.titre {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sousTitre {
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.lienContact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lien {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: 0.3s;
+}
+
+.lien:hover {
+  border-color: var(--accent-primary);
+  background-color: rgba(255, 140, 50, 0.05);
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+/* --- Droite (Formulaire) --- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.inputGroup input, 
+.inputGroup textarea {
+  background-color: #111b27;
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 6px;
+  color: white;
+  font-family: inherit;
+}
+
+.inputGroup input:focus, 
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.btnOk {
+  align-self: flex-start;
+  padding: 12px 30px;
+  border: 1px solid var(--accent-primary);
+  background: transparent;
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnOk:hover {
+  background: var(--accent-primary);
+  box-shadow: 0 0 15px var(--border-glow);
+}
+
+/* --- SIGnE --- */
+.copyright {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contactGrille {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

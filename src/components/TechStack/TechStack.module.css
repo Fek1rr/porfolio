@@ -1,0 +1,58 @@
+.techSection {
+  padding: var(--section-padding);
+  background-color: var(--bg-dark);
+}
+
+.cadre {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.sousTitre {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.titre {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  /* Grille de 6 colonnes qui s'adapte sur mobile */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.techCard {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.techCard:hover {
+  border-color: var(--accent-primary);
+  background-color: rgba(255, 140, 50, 0.05);
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--accent-primary);
+}
+
+.techNom {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}

@@ -1,0 +1,128 @@
+.Section {
+  padding: var(--section-padding);
+  background-color: var(--bg-dark);
+}
+
+.cadre {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sousTitre {
+  color: var(--accent-primary);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.titre {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projetCadre {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  display: flex; /* Horizontal layout */
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.projetCadre:hover {
+  transform: scale(1.01);
+}
+
+.image {
+  flex: 1;
+  background: #1a2332;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.projetInfo {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projetTitre {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.tagListe {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #1e293b;
+  color: var(--text-secondary);
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.projetDesc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.lien {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.githubBtn {
+  background-color: #0d1520;
+  border: 1px solid var(--border-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.liveLink {
+  color: var(--text-main);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .projetCadre {
+    flex-direction: column;
+  }
+  .projectInfo {
+    padding: 30px;
+  }
+}
