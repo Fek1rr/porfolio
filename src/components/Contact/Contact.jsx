@@ -69,7 +69,7 @@ const Contact = () => {
                 <MdEmail className={styles.icon} /> E-mail
               </motion.a>
               <motion.a 
-                href="https://wa.me/+225050030733" 
+                href="https://wa.me/+2250500340733" 
                 className={styles.lien}
                 whileHover={{ scale: 1.05 }}
               >
