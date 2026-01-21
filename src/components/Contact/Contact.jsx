@@ -16,7 +16,7 @@ const Contact = () => {
     
     // Validation
     if (!nom && !email) {
-      setNotif("Entrez un nom et un email svp");
+      setNotif("Entrez un nom ou un email et un message svp");
       return;
     }
     if (!message) {
